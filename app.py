@@ -10,7 +10,8 @@ st.title("👓 Analizador Masivo de Fotos por SKU")
 st.write("Sube tu archivo de Excel para verificar qué SKUs tienen imágenes rotas.")
 
 # Componente para subir el archivo Excel
-uploaded_file = st.file_file_uploader("Elige tu archivo Excel (.xlsx)", type=["xlsx"])
+uploaded_file = st.file_uploader("Elige tu archivo Excel (.xlsx)", type=["xlsx"])
+
 
 # Función asíncrona para verificar un link rápidamente (con simulación de navegador)
 async def verificar_url(client, url):
